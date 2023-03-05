@@ -79,7 +79,7 @@ const Pictures = () => {
       <ImageGallery pictures={pictures} onClick={onOpenModal} />
 
       {showLoadMore && !loading && <Button onClick={loadMore} />}
-      {loading && <Loader />}
+
       {openModal && (
         <Modal onClose={onModalClose}>
           <img src={contentModal.largeImageURL} alt={contentModal.tags} />

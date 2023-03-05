@@ -28,7 +28,7 @@ export default ImageGalleryItem;
 ImageGalleryItem.propTypes = {
   items: propTypes.arrayOf(
     propTypes.shape({
-      id: propTypes.oneOfType([propTypes.string, propTypes.number]),
+      id: propTypes.number,
       webformatURL: propTypes.string.isRequired,
       largeImageURL: propTypes.string.isRequired,
       tags: propTypes.string.isRequired,
